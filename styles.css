@@ -1,0 +1,67 @@
+/* reset the margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+background-color: aqua;
+    color: #333;
+}
+
+header {
+    background-color: #af4ca8;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px 0;
+    text-align: center;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*section styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: beige;
+    box-shadow: 0 0 1px rgba(0, 0, 0.10);
+}
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #af4ca8;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
