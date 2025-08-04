@@ -1,67 +1,269 @@
-/* reset the margin and padding for all elements */
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* basic styles for the body */
+
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text for readability */
     padding: 20px;
-background-color: aqua;
-    color: #333;
+    line-height: 1.6;
 }
 
+/* Header Styling */
 header {
-    background-color: #af4ca8;
+    background-color: #007acc; /* Blue header */
     color: white;
-    padding: 10px 0;
     text-align: center;
-}
-h1 {
-    font-size: 2em;
-    margin: 0;
+    padding: 30px 0;
 }
 
-nav ul {
-    list-style: none;
-    margin: 20px 0;
-    text-align: center;
+header h1 {
+    font-size: 3.5em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+/* About Section Styling */
+#about {
+    background-color: #3f3f3f; /* Light grey background for about section */
+    padding: 40px;
+    text-align: left;
+    border-radius: 8px;
+    margin-top: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #007acc; /* Blue color for the heading */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #ebdfdf;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Round profile picture */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Interests Section Styling */
+#interests {
+    padding: 40px 20px;
+    background-color: #e6f2ff; /* Light blue background */
+    text-align: left;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#interests h2 {
+    font-size: 2.5em;
+    color: #007acc; /* Blue color for the heading */
+    margin-bottom: 20px;
+}
+
+#interests ul {
+    list-style-type: none;
     padding: 0;
 }
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/*section styles */
-section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: beige;
-    box-shadow: 0 0 1px rgba(0, 0, 0.10);
-}
-section h2 {
-    font-size: 2em;
+#interests ul li {
+    font-size: 1.2em;
+    color: #333;
     margin-bottom: 10px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #af4ca8;
-    color: white;
-    position: relative;
-    bottom: 0;
+/* Experience Section Styling */
+#experience {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+    text-align: left;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#experience h2 {
+    font-size: 2.5em;
+    color: #007acc; /* Blue color for the heading */
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #007acc; /* Blue for subheadings */
+}
+
+.experience-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience-item ul li {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Project Section Styling */
+#projects {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+    text-align: left;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    color: #007acc; /* Blue color for the heading */
+    margin-bottom: 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: transparent;
+    padding: 20px;
     width: 100%;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #007acc; /* Blue for subheadings */
+}
+
+.project p {
+    font-size: 1.2em;
+    color: #333;
+}
+#cv {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+    text-align: left;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#cv h2 {
+    font-size: 2.5em;
+    color: #080808; /* Blue color for the heading */
+    margin-bottom: 20px;
+}
+
+#cv p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+{contact} {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+    text-align: left;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+/* Contact Section Styling */
+#contact {
+    padding: 40px 20px;
+    background-color: #007acc; /* Blue background */
+    color: white;
+    text-align: left;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#contact a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #007acc; /* Blue footer */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    #about h2, #interests h2, #projects h2, #experience h2 {
+        font-size: 2em;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .experience-item ul li {
+        font-size: 1em;
+    }
 }
